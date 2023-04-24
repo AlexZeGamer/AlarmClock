@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlarmMain));
             this.tmrAlarm = new System.Windows.Forms.Timer(this.components);
             this.pnlClock = new System.Windows.Forms.Panel();
             this.clbAlarms = new System.Windows.Forms.CheckedListBox();
@@ -153,6 +154,8 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.clbAlarms);
             this.Controls.Add(this.pnlClock);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAlarmMain";
             this.Text = "Alarm clock";
